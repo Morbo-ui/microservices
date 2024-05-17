@@ -11,10 +11,13 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>customer-service</module>
+    <module>fraud-service</module>
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <spring.boot.maven.plugin.version>3.1.4</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>3.1.4</spring.boot.dependencies.version>
   </properties>
@@ -39,15 +42,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <scope>runtime</scope>
     </dependency>
   </dependencies>
 
