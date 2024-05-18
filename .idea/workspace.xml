@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="third commit">
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/dmitrii/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add Eureka + LoadBalanced">
+      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/FraudCheckResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudCheckHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudCheckHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/FraudCheckResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -73,7 +69,7 @@
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.FraudApplication (1).executor": "Run",
     "Spring Boot.FraudApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "21",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,6 +88,7 @@
       <recent name="com.dmitrii.fraud" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dmitrii.clients.fraud" />
       <recent name="com.dmitrii" />
     </key>
   </component>
@@ -104,7 +101,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+  <component name="RunManager" selected="Spring Boot.FraudApplication">
     <configuration name="generated-requests | #17" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="17" requestIdentifier="#17" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -178,10 +175,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CustomerApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #17" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="HTTP Request.generated-requests | #17" />
         <item itemvalue="HTTP Request.generated-requests | #18" />
       </list>
     </recent_temporary>
@@ -202,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715899449961</updated>
       <workItem from="1715899450979" duration="2339000" />
-      <workItem from="1715901797249" duration="12073000" />
+      <workItem from="1715901797249" duration="15715000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -228,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715949934653</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Eureka + LoadBalanced">
+      <option name="closed" value="true" />
+      <created>1715957878020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715957878020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +266,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="add Eureka + LoadBalanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Eureka + LoadBalanced" />
   </component>
 </project>
