@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add feign client">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add notification service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,7 @@
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.FraudApplication (1).executor": "Run",
     "Spring Boot.FraudApplication.executor": "Run",
+    "Spring Boot.NotificationsApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -102,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NotificationsApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="generated-requests | #17" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="17" requestIdentifier="#17" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -187,8 +185,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.NotificationsApplication" />
-        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="HTTP Request.generated-requests | #17" />
       </list>
@@ -210,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715899449961</updated>
       <workItem from="1715899450979" duration="2339000" />
-      <workItem from="1715901797249" duration="18804000" />
+      <workItem from="1715901797249" duration="20870000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -252,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716042377159</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add notification service">
+      <option name="closed" value="true" />
+      <created>1716045409790</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716045409790</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +293,8 @@
     <MESSAGE value="third commit" />
     <MESSAGE value="add Eureka + LoadBalanced" />
     <MESSAGE value="add feign client" />
-    <option name="LAST_COMMIT_MESSAGE" value="add feign client" />
+    <MESSAGE value="add notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notification service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
