@@ -4,18 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add notification service">
+    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add zipkin">
+      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/dmitrii/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/dmitrii/amqp/RabbitMQMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gw/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gw/src/main/java/com/dmitrii/api/gw/ApiGWApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gw/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gw/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/rabbitmq/NotificationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +76,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGWApplication.executor": "Run",
     "Spring Boot.CustomerApplication (1).executor": "Run",
     "Spring Boot.CustomerApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
@@ -82,6 +98,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dmitrii.fraud" />
@@ -100,43 +119,29 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationsApplication">
     <configuration name="generated-requests | #17" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="17" requestIdentifier="#17" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-gw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dmitrii.api.gw.ApiGWApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmitrii.api.gw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dmitrii.CustomerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dmitrii.customer.CustomerApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dmitrii.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dmitrii.eurekaserver.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmitrii.eurekaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FraudApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="fraud-service" />
-      <option name="PROGRAM_PARAMETERS" value="--server.port=8085" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dmitrii.fraud.FraudApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dmitrii.fraud.*" />
+          <option name="PATTERN" value="com.dmitrii.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,18 +181,17 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #17" />
-      <item itemvalue="Spring Boot.FraudApplication (1)" />
+      <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.NotificationsApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.NotificationsApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.ApiGWApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="HTTP Request.generated-requests | #17" />
       </list>
     </recent_temporary>
@@ -208,7 +212,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715899449961</updated>
       <workItem from="1715899450979" duration="2339000" />
-      <workItem from="1715901797249" duration="20870000" />
+      <workItem from="1715901797249" duration="35182000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -258,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716045409790</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add zipkin">
+      <option name="closed" value="true" />
+      <created>1716051413684</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051413684</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +306,8 @@
     <MESSAGE value="add Eureka + LoadBalanced" />
     <MESSAGE value="add feign client" />
     <MESSAGE value="add notification service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add notification service" />
+    <MESSAGE value="add zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="add zipkin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

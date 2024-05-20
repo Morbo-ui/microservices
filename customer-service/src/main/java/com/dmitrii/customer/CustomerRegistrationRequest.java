@@ -1,4 +1,4 @@
-package com.dmitrii;
+package com.dmitrii.customer;
 
 public record CustomerRegistrationRequest(
 		String firstName,
