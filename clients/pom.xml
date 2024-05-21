@@ -8,8 +8,8 @@
     </parent>
     <groupId>com.dmitrii</groupId>
     <artifactId>clients</artifactId>
-    <packaging>war</packaging>
-    <name>clients Maven Webapp</name>
+    <packaging>jar</packaging>
+    <name>clients</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
