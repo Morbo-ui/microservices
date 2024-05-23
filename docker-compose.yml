@@ -45,31 +45,31 @@ services:
       - "15672:15672"
     networks:
       - spring
-  eureka-server:
-    image: morboui/eureka-server:latest
-    container_name: eureka-server
-    ports:
-      - "8761:8761"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-
-  api-gw:
-    image: morboui/api-gw:latest
-    container_name: api-gw
-    ports:
-      - "8082:8082"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-      - eureka-server
-
+#  eureka-server:
+#    image: morboui/eureka-server:latest
+#    container_name: eureka-server
+#    ports:
+#      - "8761:8761"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#
+#  api-gw:
+#    image: morboui/api-gw:latest
+#    container_name: api-gw
+#    ports:
+#      - "8082:8082"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#      - eureka-server
+#
   customer-service:
     image: morboui/customer-service:latest
     container_name: customer-service
