@@ -4,36 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add docker profile">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-kube.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/volume.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/configmap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/rbac.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/statefulset.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/fraud/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" afterDir="false" />
+    <list default="true" id="54e45dfc-01c3-4d99-a070-04aba75c3a1b" name="Changes" comment="add k8s + refactoring">
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud-service/src/main/resources/application-kube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application-kube.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/FraudClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/dmitrii/clients/fraud/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud-service/src/main/java/com/dmitrii/fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dmitrii/notifications/NotificationsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/dmitrii/customer/CustomerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +251,7 @@
       <workItem from="1715899450979" duration="2339000" />
       <workItem from="1715901797249" duration="45602000" />
       <workItem from="1716392427294" duration="6293000" />
-      <workItem from="1716420033157" duration="21771000" />
+      <workItem from="1716420033157" duration="25960000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -355,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716425358992</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add k8s + refactoring">
+      <option name="closed" value="true" />
+      <created>1716482636200</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716482636200</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +381,8 @@
     <MESSAGE value="add RabbitMQ" />
     <MESSAGE value="add build pom.xml" />
     <MESSAGE value="add docker profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker profile" />
+    <MESSAGE value="add k8s + refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="add k8s + refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
