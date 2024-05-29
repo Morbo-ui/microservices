@@ -1,9 +1,9 @@
 package com.dmitrii.customer;
 
-import com.dmitrii.amqp.RabbitMQMessageProducer;
 import com.dmitrii.clients.fraud.FraudCheckResponse;
 import com.dmitrii.clients.fraud.FraudClient;
 import com.dmitrii.clients.fraud.NotificationRequest;
+import com.dmitrii.kafka.KafkaMessageProducer;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class CustomerService {
 	
 	private final CustomerRepository repository;
 	private final FraudClient fraudClient;
-	private final RabbitMQMessageProducer producer;
+	private final KafkaMessageProducer kafkaMessageProducer;
 	
 	public void registerCustomer(CustomerRegistrationRequest request) {
 		Customer customer = Customer.builder()
@@ -38,10 +38,10 @@ public class CustomerService {
 						customer.getFirstName())
 		);
 		
-		producer.publish(
-				notificationRequest,
-				"internal.exchange",
-				"internal.notification.routing-key"
-				);
+		kafkaMessageProducer.publish(
+				"microservices",
+				"notification-key",
+				notificationRequest
+		);
 	}
 }

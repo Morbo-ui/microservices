@@ -70,50 +70,50 @@ services:
 #      - zipkin
 #      - eureka-server
 #
-  customer-service:
-    image: morboui/customer-service:latest
-    container_name: customer-service
-    ports:
-      - "8080:8080"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-      - postgres
-    depends_on:
-      - zipkin
-      - postgres
-      - rabbitmq
-
-  fraud-service:
-    image: morboui/fraud-service:latest
-    container_name: fraud-service
-    ports:
-      - "8081:8081"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-      - postgres
-    depends_on:
-      - zipkin
-      - postgres
-      - rabbitmq
-
-  notification-service:
-    image: morboui/notification-service:latest
-    container_name: notification-service
-    ports:
-      - "8083:8083"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-      - postgres
-    depends_on:
-      - zipkin
-      - postgres
-      - rabbitmq
+#  customer-service:
+#    image: morboui/customer-service:latest
+#    container_name: customer-service
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#      - postgres
+#    depends_on:
+#      - zipkin
+#      - postgres
+#      - rabbitmq
+#
+#  fraud-service:
+#    image: morboui/fraud-service:latest
+#    container_name: fraud-service
+#    ports:
+#      - "8081:8081"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#      - postgres
+#    depends_on:
+#      - zipkin
+#      - postgres
+#      - rabbitmq
+#
+#  notification-service:
+#    image: morboui/notification-service:latest
+#    container_name: notification-service
+#    ports:
+#      - "8083:8083"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#      - postgres
+#    depends_on:
+#      - zipkin
+#      - postgres
+#      - rabbitmq
 
 networks:
   postgres:
