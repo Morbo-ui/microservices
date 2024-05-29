@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySources;
 		}
 )
 @EnableFeignClients
-//@EnableEurekaClient
+@EnableEurekaClient
 @PropertySources({
 		@PropertySource("classpath:clients-${spring.profiles.active}.properties")
 })

@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySources;
                 "com.dmitrii.amqp",
         }
 )
-//@EnableEurekaClient
+@EnableEurekaClient
 @EnableFeignClients(
         basePackages = "com.dmitrii.clients"
 )

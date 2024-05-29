@@ -30,15 +30,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "minikube",
-      "originalNamespace": "default"
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="minikube" />
   </component>
@@ -61,59 +61,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.generated-requests | #17.executor": "Run",
-    "HTTP Request.generated-requests | #18.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.amqp [install].executor": "Run",
-    "Maven.amqp [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.amqp [org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile].executor": "Run",
-    "Maven.amqp [package].executor": "Run",
-    "Maven.api-gw [install].executor": "Run",
-    "Maven.api-gw [package].executor": "Run",
-    "Maven.clients [clean].executor": "Run",
-    "Maven.clients [compile].executor": "Run",
-    "Maven.clients [package].executor": "Run",
-    "Maven.customer-service [clean].executor": "Run",
-    "Maven.customer-service [compile].executor": "Run",
-    "Maven.customer-service [package].executor": "Run",
-    "Maven.microservices [clean].executor": "Run",
-    "Maven.microservices [install].executor": "Run",
-    "Maven.microservices [package].executor": "Run",
-    "Maven.microservices [validate].executor": "Run",
-    "Maven.microservices [verify].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGWApplication.executor": "Run",
-    "Spring Boot.CustomerApplication (1).executor": "Run",
-    "Spring Boot.CustomerApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.FraudApplication (1).executor": "Run",
-    "Spring Boot.FraudApplication.executor": "Run",
-    "Spring Boot.NotificationsApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dmitrybuzin/Developer/microservices/k8s/minikube/services/notification",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4402299",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #17.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #18.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.amqp [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.amqp [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.amqp [org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.amqp [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gw [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gw [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.clients [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.clients [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.clients [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.customer-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.customer-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.customer-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGWApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FraudApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FraudApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dmitrybuzin/Developer/microservices/k8s/minikube/services/notification&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4402299&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
